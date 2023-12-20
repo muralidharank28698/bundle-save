@@ -1,0 +1,217 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: Futura, sans-serif;
+}
+
+.container {
+    width: 35%;
+    height: max-content;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.contentContainer {
+    margin: auto;
+    text-align: center;
+}
+
+h4 {
+    display: flex;
+    flex-direction: row;
+    color: rgb(47, 155, 110);
+    font-size: 1rem;
+}
+
+h4:before,
+h4:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid rgb(160, 158, 158);
+    margin: auto;
+}
+
+h4:before {
+    margin-right: 15px
+}
+
+h4:after {
+    margin-left: 15px
+}
+
+.boxContainer {
+    border: 1px solid rgb(160, 158, 158);
+    height: max-content;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.redBorder {
+    border: 2px solid red;
+}
+
+.left_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left_content .data {
+    text-align: left;
+    margin-left: 25px;
+}
+
+.left_content .data p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.strikeData {
+    color: #8b8787;
+    margin-right: 40px;
+    font-size: 12px;
+}
+
+.First h5,
+.Two h5,
+.Three h5 {
+    font-size: 14px;
+    text-align: left;
+}
+
+.First,
+.Two,
+.Three {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.addToCart_button {
+    margin-top: 25px;
+}
+
+[type="radio"] {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+.bottomContent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+
+.addToCart_button button {
+    border-radius: 5px;
+    background-color: rgb(16, 90, 62);
+    padding: 14px;
+    width: 100%;
+    border: 0;
+    font-size: 18px;
+    color: #eee;
+}
+.addToCart_button i{
+    color: #eee;
+    font-size: 14px;
+}
+
+.addToCart_button :hover {
+    cursor: pointer;
+}
+
+.expand_data {
+    width: 60%;
+    display: none;
+}
+
+.flexContainer {
+    display: flex;
+    margin-left: 45px;
+    margin-bottom: 15px;
+}
+
+.mostPopular {
+    margin-bottom: 5px;
+    color: rgb(8, 114, 91);
+    font-weight: bold;
+}
+
+.ids {
+    margin-top: 30px;
+    margin-right: -18px;
+    font-size: 14px;
+}
+
+.ids :first-child {
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+
+.input_fields {
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flexContainer select {
+    font-size: 16px;
+    font-weight: normal;
+    max-width: 100%;
+    border: 1px solid rgb(206, 202, 202);
+    padding: 3px;
+    border-radius: 2px;
+    width: 80px;
+    margin-top: 10px;
+}
+
+.copy {
+    font-style: italic;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.title{
+    font-size: 18px;
+    text-align: left;
+}
+
+.left {
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(85, 138, 132);
+}
+
+@media screen and (max-width: 1035px) {
+    .strikeData {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .container {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 55%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .container {
+        width: 85%;
+    }
+
+}

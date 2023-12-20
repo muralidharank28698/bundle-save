@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Bundle & Save</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="contentContainer">
+            <div class="titleContainer">
+                <h4 class="title">
+                    Bundle & Save
+                </h4>
+            </div>
+            <div class="boxContainer addBorderOne" id="container_box" onclick=toggle(1)>
+                <div class="First">
+                    <div class="left_content">
+                        <input type="radio" />
+                        <div class="data">
+                            <p>1 Pair</p>
+                            <h5>
+                                DKK 195.00
+                            </h5>
+                        </div>
+                    </div>
+                    <h5>
+                        50% OFF
+                    </h5>
+                </div>
+                <div class="expand_data" id="one">
+                    <div class="flexContainer">
+                        <div class="ids">
+                            <p>#1</p>
+                            <p>#2</p>
+                        </div>
+                        <div class="input_fields">
+                            <p class="title">Size</p>
+                            <select name="" id="" class="selectField">
+                                <option value="">S</option>
+                            </select>
+                            <select name="" id="" class="selectField">
+                                <option value="">S</option>
+                            </select>
+                        </div>
+                        <div class="input_fields">
+                            <p class="title">Color</p>
+                            <select name="" id="" class="selectField">
+                                <option value="">Color</option>
+                            </select>
+                            <select name="" id="" class="selectField">
+                                <option value="">Color</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxContainer addBorderTwo" id="container_box" onclick=toggle(2)>
+                <div class="Two">
+                    <div class="left_content">
+                        <input type="radio" />
+                        <div class="data">
+                            <p>2 Pair</p>
+                            <h5>
+                                DKK 345.00
+                            </h5>
+                        </div>
+                    </div>
+                    <div style="text-align: right;">
+                        <p class="mostPopular">Most Popular</p>
+                        <div style="display: flex;">
+                            <p class="strikeData"><s>DKK 195.00</s></p>
+                            <h5 style="text-align: right;">
+                                40% OFF
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="expand_data" id="two">
+                    <div class="flexContainer">
+                        <div class="ids">
+                            <p>#1</p>
+                            <p>#2</p>
+                        </div>
+                        <div class="input_fields">
+                            <p class="title">Size</p>
+                            <select name="" id="" class="selectField">
+                                <option value="">S</option>
+                            </select>
+                            <select name="" id="" class="selectField">
+                                <option value="">S</option>
+                            </select>
+                        </div>
+                        <div class="input_fields">
+                            <p class="title">Color</p>
+                            <select name="" id="" class="selectField">
+                                <option value="">Color</option>
+                            </select>
+                            <select name="" id="" class="selectField">
+                                <option value="">Color</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="boxContainer addBorderThree" id="container_box" onclick="toggle(3)">
+                <div class="Three">
+                    <div class="left_content">
+                        <input type="radio" />
+                        <div class="data">
+                            <p>3 Pair</p>
+                            <h5>
+                                DKK 528.00
+                            </h5>
+                        </div>
+                    </div>
+                    <h5>
+                        60% OFF
+                    </h5>
+                </div>
+                <div class="expand_data" id="three">
+                    <div class="flexContainer">
+                        <div class="ids">
+                            <p>#1</p>
+                            <p>#2</p>
+                        </div>
+                        <div class="input_fields">
+                            <p class="title">Size</p>
+                            <select name="" id="" class="selectField">
+                                <option value="">S</option>
+                            </select>
+                            <select name="" id="" class="selectField">
+                                <option value="">S</option>
+                            </select>
+                        </div>
+                        <div class="input_fields">
+                            <p class="title">Color</p>
+                            <select name="" id="" class="selectField">
+                                <option value="">Color</option>
+                            </select>
+                            <select name="" id="" class="selectField">
+                                <option value="">Color</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomContent">
+                <h5 class="left">
+                    Free 2 Day Shipping
+                </h5>
+                <h5 class="right">
+                    Total : <span style="font-size: 1rem;">DKK 360.00</span>
+                </h5>
+            </div>
+            <div class="addToCart_button">
+                <button><i class="fa fa-plus"></i> Add to Cart</button>
+            </div>
+            <p class="copy">&copy Powered by Pumper</p>
+        </div>
+    </div>
+
+    <script>
+
+        var first = document.querySelector(".addBorderOne");
+        var second = document.querySelector(".addBorderTwo");
+        second.style.border = "2px solid rgb(16, 90, 62)"
+        var third = document.querySelector(".addBorderThree");
+
+        var idOne = document.getElementById('one');
+        var idTwo = document.getElementById('two');
+        idTwo.style.display = "block";
+        var idThree = document.getElementById('three');
+
+        function toggle(id) {
+            if (id == 1) {
+                idOne.style.display = "block";
+                idTwo.style.display = "none";
+                idThree.style.display = "none";
+                first.style.border = "2px solid rgb(16, 90, 62)"
+                second.style.border = "1px solid rgb(160, 158, 158)"
+                third.style.border = "1px solid rgb(160, 158, 158)"
+
+            }
+            else if (id == 2) {
+                idOne.style.display = "none";
+                idTwo.style.display = "block";
+                idThree.style.display = "none";
+                first.style.border = "1px solid rgb(160, 158, 158)"
+                second.style.border = "2px solid rgb(16, 90, 62)"
+                third.style.border = "1px solid rgb(160, 158, 158)"
+            }
+            else if (id == 3) {
+                idOne.style.display = "none";
+                idTwo.style.display = "none";
+                idThree.style.display = "block";
+                first.style.border = "1px solid rgb(160, 158, 158)"
+                second.style.border = "1px solid rgb(160, 158, 158)"
+                third.style.border = "2px solid rgb(16, 90, 62)"
+            }
+        } 
+    </script>
+
+</body>
+
+</html>
